@@ -1,0 +1,42 @@
+{
+  "name": "h5-bed",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "readfile": "node src/utils/readfile.js",
+    "copy": "node build/copyfile.js  && node build/copyIndex.js",
+    "public": "npm run build && npm run copy"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
+    "node-xls": "0.0.8",
+    "node-xlsx": "^0.15.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "autoprefixer": "^9.6.0",
+    "axios": "^0.19.0",
+    "babel-eslint": "^10.0.1",
+    "copy-webpack-plugin": "^5.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lib-flexible": "^0.3.2",
+    "mock": "^0.1.1",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.9.0",
+    "postcss-px2rem": "^0.3.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.3"
+  }
+}
